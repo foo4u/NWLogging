@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
   s.source        = { :git => 'https://github.com/noodlewerk/NWLogging.git', :tag => s.version.to_s }
   s.source_files  = 'Library/**/*.{h,m,c}'
+  s.ios.exclude_files = 'Library/UI/NWLLogViewController.{h,m}'
   s.osx.exclude_files = 'Library/UI/NWLLogViewController.{h,m}'
-  s.ios.framework = 'MessageUI', 'UIKit'
   s.libraries     = 'z'
 end
